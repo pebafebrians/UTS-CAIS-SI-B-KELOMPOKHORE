@@ -15,9 +15,9 @@ CAIS adalah aplikasi informasi akademik sederhana berbasis web yang dikembangkan
 
 | Nama | NIM | Peran | Kontribusi |
 |------|-----|-------|------------|
-| Peba | [NIM] | Ketua Tim / Frontend Beranda & Modul Mahasiswa | Struktur halaman, `index.html`, `pages/mahasiswa.html`, integrasi navigasi, README |
-| Sahlan | [NIM] | Frontend Login & Styling | `pages/login.html`, `css/style.css`, form validation styling |
-| Rizky | [NIM] | Frontend Dashboard & JavaScript | `pages/dashboard.html`, `js/script.js`, sistem login `localStorage`, proteksi halaman |
+| Peba | [11523058] | Ketua Tim / Frontend Beranda & Modul Mahasiswa | Struktur halaman, `index.html`, `pages/mahasiswa.html`, integrasi navigasi, README |
+| Sahlan | [11523021] | Frontend Login & Styling | `pages/login.html`, `css/style.css`, form validation styling |
+| Rizky | [11523020] | Frontend Dashboard & JavaScript | `pages/dashboard.html`, `js/script.js`, sistem login `localStorage`, proteksi halaman |
 
 **Tautan Kontribusi (Commit):**
 - Peba: `https://github.com/[username]/[repo]/commits?author=[username-peba]`
