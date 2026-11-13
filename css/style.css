@@ -1,97 +1,150 @@
-/* ===== Login Page ===== */
-.login-container {
-    max-width: 400px;
-    margin: 80px auto;
-    padding: 30px;
-    background: #ffffff;
-    border-radius: 10px;
-    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
-    font-family: Arial, sans-serif;
+:root {
+    --primary: #1F3864;
+    --bg: #f4f6fb;
+    --text: #1e293b;
+    --muted: #64748b;
+    --radius: 12px;
+    --shadow: 0 4px 14px rgba(15, 23, 42, 0.08);
 }
 
-.login-container h2 {
-    text-align: center;
-    color: #2c3e50;
-    margin-bottom: 5px;
+.dashboard-page {
+    margin: 0;
+    font-family: "Segoe UI", Arial, sans-serif;
+    background: var(--bg);
+    color: var(--text);
 }
 
-.subtitle {
-    text-align: center;
-    color: #7f8c8d;
-    font-size: 13px;
-    margin-bottom: 25px;
+/* Navbar */
+.navbar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-wrap: wrap;
+    gap: 12px;
+    background: var(--primary);
+    color: #fff;
+    padding: 14px 28px;
+    box-shadow: var(--shadow);
 }
 
-.form-group {
-    margin-bottom: 15px;
+.brand {
+    margin: 0;
+    font-size: 1.3rem;
 }
 
-.form-group label {
-    display: block;
-    margin-bottom: 5px;
-    font-weight: bold;
-    color: #34495e;
+.brand span {
+    font-weight: 400;
+    opacity: 0.8;
 }
 
-.form-group input {
-    width: 100%;
-    padding: 10px;
-    border: 1px solid #bdc3c7;
-    border-radius: 6px;
-    box-sizing: border-box;
-    font-size: 14px;
+.nav-links {
+    display: flex;
+    align-items: center;
+    gap: 18px;
 }
 
-.form-group input:focus {
-    outline: none;
-    border-color: #3498db;
-}
-
-.btn-login {
-    width: 100%;
-    padding: 12px;
-    background-color: pink;
-    color: white;
-    border: none;
-    border-radius: 6px;
-    font-size: 15px;
-    cursor: pointer;
-    margin-top: 10px;
-}
-
-.btn-login:hover {
-    background-color: #2980b9;
-}
-
-.error-msg {
-    color: #e74c3c;
-    font-size: 13px;
-    text-align: center;
-    margin-top: 10px;
-    min-height: 18px;
-}
-
-.back-link {
-    text-align: center;
-    margin-top: 20px;
-    font-size: 13px;
-}
-
-.back-link a {
-    color: #3498db;
+.nav-links a {
+    color: #fff;
     text-decoration: none;
+    opacity: 0.9;
+}
+
+.nav-links a:hover {
+    opacity: 1;
+    text-decoration: underline;
 }
 
 .btn-logout {
-    background-color: #e74c3c;
-    color: white;
+    background: #fff;
+    color: var(--primary);
     border: none;
-    padding: 8px 14px;
-    border-radius: 6px;
+    padding: 8px 16px;
+    border-radius: 999px;
+    font-weight: 600;
     cursor: pointer;
-    font-size: 13px;
+    transition: transform 0.15s ease;
 }
 
 .btn-logout:hover {
-    background-color: #c0392b;
+    transform: translateY(-1px);
+}
+
+/* Konten */
+.dashboard-container {
+    max-width: 1100px;
+    margin: 0 auto;
+    padding: 32px 20px;
+}
+
+.welcome h2 {
+    margin: 0 0 4px;
+    color: var(--primary);
+}
+
+.welcome p {
+    margin: 0 0 28px;
+    color: var(--muted);
+}
+
+/* Kartu */
+.cards {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(240px, 1fr));
+    gap: 20px;
+}
+
+.card {
+    display: flex;
+    align-items: center;
+    gap: 16px;
+    background: #fff;
+    border-radius: var(--radius);
+    padding: 22px;
+    box-shadow: var(--shadow);
+    border-left: 5px solid var(--accent);
+    transition: transform 0.2s ease, box-shadow 0.2s ease;
+}
+
+.card:hover {
+    transform: translateY(-4px);
+    box-shadow: 0 10px 24px rgba(15, 23, 42, 0.12);
+}
+
+.card h3 {
+    margin: 0 0 6px;
+    font-size: 0.95rem;
+    color: var(--muted);
+    font-weight: 600;
+}
+
+.card-value {
+    margin: 0;
+    font-size: 2rem;
+    font-weight: 700;
+}
+
+.card-icon {
+    width: 52px;
+    height: 52px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 1.5rem;
+    border-radius: 14px;
+    background: var(--accent-soft);
+}
+
+.card-blue   { --accent: #2563eb; --accent-soft: #dbeafe; }
+.card-green  { --accent: #16a34a; --accent-soft: #dcfce7; }
+.card-orange { --accent: #ea580c; --accent-soft: #ffedd5; }
+
+/* Responsif */
+@media (max-width: 600px) {
+    .navbar {
+        padding: 14px 16px;
+    }
+
+    .dashboard-container {
+        padding: 20px 14px;
+    }
 }
