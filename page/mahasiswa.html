@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Data Mahasiswa - CAIS</title>
+    <link rel="stylesheet" href="../css/style.css">
+    <link rel="stylesheet" href="../css/dashboard.css">
+    <link rel="stylesheet" href="../css/mahasiswa.css">
+</head>
+<body class="dashboard-page">
+    <header class="navbar">
+        <h1 class="brand">CAIS <span>Data Mahasiswa</span></h1>
+        <nav class="nav-links">
+            <a href="../index.html">Beranda</a>
+            <a href="dashboard.html">Dashboard</a>
+            <button onclick="logout()" class="btn-logout">Logout</button>
+        </nav>
+    </header>
+
+    <main class="dashboard-container">
+        <section class="welcome">
+            <h2>Daftar Mahasiswa</h2>
+            <p>Data mahasiswa yang terdaftar pada sistem informasi akademik.</p>
+        </section>
+
+        <div class="table-wrapper">
+            <table class="mahasiswa-table">
+                <thead>
+                    <tr>
+                        <th>No</th>
+                        <th>NIM</th>
+                        <th>Nama</th>
+                        <th>Program Studi</th>
+                        <th>Angkatan</th>
+                        <th>IPK</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td>1</td>
+                        <td>2023001</td>
+                        <td>Andi Pratama</td>
+                        <td>Informatika</td>
+                        <td>2023</td>
+                        <td>3.45</td>
+                    </tr>
+                    <tr>
+                        <td>2</td>
+                        <td>2023002</td>
+                        <td>Siti Rahma</td>
+                        <td>Sistem Informasi</td>
+                        <td>2023</td>
+                        <td>3.62</td>
+                    </tr>
+                    <tr>
+                        <td>3</td>
+                        <td>2023003</td>
+                        <td>Budi Santoso</td>
+                        <td>Teknik Komputer</td>
+                        <td>2023</td>
+                        <td>3.10</td>
+                    </tr>
+                    <tr>
+                        <td>4</td>
+                        <td>2024001</td>
+                        <td>Dewi Lestari</td>
+                        <td>Informatika</td>
+                        <td>2024</td>
+                        <td>3.78</td>
+                    </tr>
+                    <tr>
+                        <td>5</td>
+                        <td>2024002</td>
+                        <td>Rizky Fauzan</td>
+                        <td>Sistem Informasi</td>
+                        <td>2024</td>
+                        <td>3.27</td>
+                    </tr>
+                </tbody>
+            </table>
+        </div>
+    </main>
+
+    <script src="../js/script.js"></script>
+</body>
+</html>
