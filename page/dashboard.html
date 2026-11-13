@@ -2,13 +2,15 @@
 <html lang="id">
 <head>
     <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Dashboard - CAIS</title>
     <link rel="stylesheet" href="../css/style.css">
+    <link rel="stylesheet" href="../css/dashboard.css">
 </head>
-<body>
+<body class="dashboard-page">
     <header class="navbar">
-        <h1>CAIS Dashboard</h1>
-        <nav>
+        <h1 class="brand">CAIS <span>Dashboard</span></h1>
+        <nav class="nav-links">
             <a href="../index.html">Beranda</a>
             <a href="mahasiswa.html">Data Mahasiswa</a>
             <button onclick="logout()" class="btn-logout">Logout</button>
@@ -16,21 +18,34 @@
     </header>
 
     <main class="dashboard-container">
-        <h2 id="welcomeUser">Selamat datang!</h2>
-        <div class="cards">
-            <div class="card">
-                <h3>Total Mahasiswa</h3>
-                <p>120</p>
-            </div>
-            <div class="card">
-                <h3>Mata Kuliah Aktif</h3>
-                <p>8</p>
-            </div>
-            <div class="card">
-                <h3>Dosen Pengampu</h3>
-                <p>15</p>
-            </div>
-        </div>
+        <section class="welcome">
+            <h2 id="welcomeUser">Selamat datang!</h2>
+            <p>Ringkasan informasi akademik hari ini.</p>
+        </section>
+
+        <section class="cards">
+            <article class="card card-blue">
+                <div class="card-icon">👥</div>
+                <div>
+                    <h3>Total Mahasiswa</h3>
+                    <p class="card-value">120</p>
+                </div>
+            </article>
+            <article class="card card-green">
+                <div class="card-icon">📚</div>
+                <div>
+                    <h3>Mata Kuliah Aktif</h3>
+                    <p class="card-value">8</p>
+                </div>
+            </article>
+            <article class="card card-orange">
+                <div class="card-icon">🎓</div>
+                <div>
+                    <h3>Dosen Pengampu</h3>
+                    <p class="card-value">15</p>
+                </div>
+            </article>
+        </section>
     </main>
 
     <script src="../js/script.js"></script>
