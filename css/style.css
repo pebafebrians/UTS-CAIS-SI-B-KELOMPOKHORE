@@ -281,3 +281,60 @@
         padding: 20px 14px;
     }
 }
+.table-wrapper {
+    background: #fff;
+    border-radius: var(--radius);
+    box-shadow: var(--shadow);
+    overflow-x: auto;
+}
+
+.mahasiswa-table {
+    width: 100%;
+    border-collapse: collapse;
+    font-size: 0.95rem;
+}
+
+.mahasiswa-table thead th {
+    background: var(--primary);
+    color: #fff;
+    text-align: left;
+    padding: 14px 16px;
+    font-weight: 600;
+    white-space: nowrap;
+}
+
+.mahasiswa-table tbody td {
+    padding: 13px 16px;
+    border-bottom: 1px solid #e2e8f0;
+}
+
+.mahasiswa-table tbody tr:nth-child(even) {
+    background: #f8fafc;
+}
+
+.mahasiswa-table tbody tr:hover {
+    background: #eef4ff;
+}
+
+.mahasiswa-table tbody tr:last-child td {
+    border-bottom: none;
+}
+
+/* Kolom No dan IPK rata tengah */
+.mahasiswa-table th:first-child,
+.mahasiswa-table td:first-child,
+.mahasiswa-table th:last-child,
+.mahasiswa-table td:last-child {
+    text-align: center;
+}
+
+@media (max-width: 600px) {
+    .mahasiswa-table {
+        font-size: 0.85rem;
+    }
+
+    .mahasiswa-table thead th,
+    .mahasiswa-table tbody td {
+        padding: 10px 12px;
+    }
+}
